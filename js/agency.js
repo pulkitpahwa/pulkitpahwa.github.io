@@ -24,3 +24,18 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
+        $(".intro-text").css({"margin-top":"100px"});
+        $(".intro-heading").css({"font-size":"30px", "font-weight":"400", "margin-top":"30px"});
+        $(".btn-xl").css({"margin-top": "100px"});
+        $("section#skills").css({"padding": "80px 0"});
+    }
+    else{
+        $(".intro-text").css({"margin-top":"-70px"});
+        $(".intro-heading").css({"font-size":"43px", "font-weight":"400", "margin-bottom":"0px"});
+        $(".btn-xl").css({"margin-top": "100px"});
+        $("section#skills").css({"padding": "30px 0"});
+    }
+})
