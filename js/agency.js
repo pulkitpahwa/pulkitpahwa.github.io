@@ -27,9 +27,9 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(document).ready(function(){
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ){
-        $(".intro-text").css({"margin-top":"100px"});
+        $(".intro-text").css({"margin-top":"50px"});
         $(".intro-heading").css({"font-size":"30px", "font-weight":"400", "margin-top":"30px"});
-        $(".btn-xl").css({"margin-top": "100px"});
+        $(".btn-xl").css({"margin-top": "70px"});
         $("section#skills").css({"padding": "80px 0"});
     }
     else{
