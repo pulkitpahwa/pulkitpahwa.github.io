@@ -10,8 +10,23 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <style>
-        .card-img-top{
-            height: 180px;
+        @media only screen and (min-width: 768px) {
+            .card-img-top {
+                height: 180px;
+            }
+            .hero-photo{
+                object-fit: cover; object-position: 50% 50%;
+                min-height: 100vh!important
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .card-img-top {
+                height: 125px;
+            }
+            .hero-photo{
+            object-fit: cover; object-position: 50% 50%
+            }
         }
     </style>
 
@@ -22,13 +37,13 @@
         <div class="row">
             <div class="col-12 home">
                 <div class="row g-0">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-6 col-12 order-md-2 order-xs-1 order-sm-1">
                         <div class="card" lc-helper="video-bg">
-                            <img src="photo1.jpg" class="min-vh-100"
-                                style="object-fit: cover; object-position: 50% 50%">
+                            <img src="photo1.jpg" class="hero-photo" 
+                                >
                         </div>
                     </div>
-                    <div class="col-md-6 order-md-1 my-auto text-center" style="padding:10vw">
+                    <div class="col-md-6 col-12 order-md-1 order-xs-2 order-sm-2 my-auto text-center" style="padding:10vw">
 
                         <div class="lc-block mb-3">
                             <div editable="rich">
@@ -56,41 +71,46 @@
                         <div class="lc-block mb-3">
                             <div editable="rich">
                                 <h2>About Me</h2>
-                                <p class="">I'm an accomplished Python Developer with 8 years of experience, specializing in crafting
+                                <p class="">I'm an accomplished Python Developer with 8 years of experience,
+                                    specializing in crafting
                                     MVPs
-                                    and unraveling intricate business challenges. Beyond coding, I'm passionate about tech,
+                                    and unraveling intricate business challenges. Beyond coding, I'm passionate about
+                                    tech,
                                     mutual
-                                    funds, stock markets, trading, and real estate, making me a well-rounded enthusiast in
+                                    funds, stock markets, trading, and real estate, making me a well-rounded enthusiast
+                                    in
                                     both the
                                     digital and financial realms.</p>
-    
+
                             </div>
                             <div class="lc-block">
-                                <a class="btn btn-primary" href="#experience" role="button">Work Experience</a>
-                                <a class="btn btn-primary" href="#skills" role="button">Skills</a>
-                                <a class="btn btn-primary" href="#blogs" role="button">Blogs</a>
-                                <a class="btn btn-primary" href="#courses" role="button">Courses</a>
+                                <a class="btn btn-primary m-2" href="#experience" role="button">Work Experience</a>
+                                <a class="btn btn-primary m-2" href="#skills" role="button">Skills</a>
+                                <a class="btn btn-primary m-2" href="#blogs" role="button">Blogs</a>
+                                <a class="btn btn-primary m-2" href="#courses" role="button">Courses</a>
                             </div><!-- /lc-block -->
-    
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12" id="skills">
                 <div class="row g-0">
-                    <div class="col-md-11 mx-auto my-auto text-center" style="padding:10vw">
+                    <div class="col-md-11 col-12 mx-auto my-auto text-center" style="padding:10vw">
 
                         <div class="lc-block mb-3">
                             <div editable="rich">
                                 <h2>My Skills</h2>
                                 <p class="">I do all kinds of neat stuff.</p>
                             </div>
-                            <div class="row row-cols-1 row-cols-md-4 g-4">
+                            <div class="row row-cols-2 row-cols-md-4 g-4">
                                 <div class="col">
                                     <div class="card">
                                         <img src="python-logo.png" alt="" class="card-img-top p-5">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Python</h5></div>
+                                            <div class="card-title">
+                                                <h5>Python</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -99,7 +119,9 @@
                                     <div class="card">
                                         <img src="django1.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Django</h5></div>
+                                            <div class="card-title">
+                                                <h5>Django</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -108,7 +130,9 @@
                                     <div class="card">
                                         <img src="senaite2.png" alt="" class="card-img-top p-3">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Senaite LIMS</h5></div>
+                                            <div class="card-title">
+                                                <h5>Senaite LIMS</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -117,7 +141,9 @@
                                     <div class="card">
                                         <img src="bsestar.png" alt="" class="card-img-top p-2">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>BSE Star MF</h5></div>
+                                            <div class="card-title">
+                                                <h5>BSE Star MF</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -126,7 +152,9 @@
                                     <div class="card">
                                         <img src="aws.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>AWS</h5></div>
+                                            <div class="card-title">
+                                                <h5>AWS</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -135,7 +163,9 @@
                                     <div class="card">
                                         <img src="redis.png" alt="" class="card-img-top">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Redis</h5></div>
+                                            <div class="card-title">
+                                                <h5>Redis</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -144,7 +174,9 @@
                                     <div class="card">
                                         <img src="postgresq.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Postgresql</h5></div>
+                                            <div class="card-title">
+                                                <h5>Postgresql</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -153,7 +185,9 @@
                                     <div class="card">
                                         <img src="wordpress.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Wordpress</h5></div>
+                                            <div class="card-title">
+                                                <h5>Wordpress</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -162,7 +196,9 @@
                                     <div class="card">
                                         <img src="linux.jpeg" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Linux</h5></div>
+                                            <div class="card-title">
+                                                <h5>Linux</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -171,7 +207,9 @@
                                     <div class="card">
                                         <img src="Javascript.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Javascript</h5></div>
+                                            <div class="card-title">
+                                                <h5>Javascript</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -180,7 +218,9 @@
                                     <div class="card">
                                         <img src="vuejs.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Vue.Js</h5></div>
+                                            <div class="card-title">
+                                                <h5>Vue.Js</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -189,7 +229,9 @@
                                     <div class="card">
                                         <img src="react.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>React.Js</h5></div>
+                                            <div class="card-title">
+                                                <h5>React.Js</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -198,13 +240,15 @@
                                     <div class="card">
                                         <img src="react-native.png" alt="" class="card-img-top p-3">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>React-Native</h5></div>
+                                            <div class="card-title">
+                                                <h5>React-Native</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div><!-- /lc-block -->
-    
+
                         </div>
                     </div>
                 </div>
@@ -212,19 +256,22 @@
             </div>
             <div class="col-12" id="experience">
                 <div class="row g-0">
-                    <div class="col-md-11 mx-auto my-auto text-center" style="padding:10vw">
+                    <div class="col-md-11 col-12 mx-auto my-auto text-center" style="padding:10vw">
 
                         <div class="lc-block mb-3">
                             <div editable="rich">
                                 <h2>Experience</h2>
-                                <p class="">Over the span of 8 years, I have worked with numerous companies both as full-time employee as well as consultant.</p>
+                                <p class="">Over the span of 8 years, I have worked with numerous companies both as
+                                    full-time employee as well as consultant.</p>
                             </div>
-                            <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
+                            <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
                                 <div class="col">
                                     <div class="card">
                                         <img src="wealthzi.jpeg" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Wealthzi</h5></div>
+                                            <div class="card-title">
+                                                <h5>Wealthzi</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -233,7 +280,9 @@
                                     <div class="card">
                                         <img src="paysense.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Paysense</h5></div>
+                                            <div class="card-title">
+                                                <h5>Paysense</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -242,7 +291,9 @@
                                     <div class="card">
                                         <img src="av.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>Analytics Vidhya</h5></div>
+                                            <div class="card-title">
+                                                <h5>Analytics Vidhya</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -251,7 +302,9 @@
                                     <div class="card">
                                         <img src="ethicalhat.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>EthicalHat</h5></div>
+                                            <div class="card-title">
+                                                <h5>EthicalHat</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -260,7 +313,9 @@
                                     <div class="card">
                                         <img src="searchstax.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>SearchStax</h5></div>
+                                            <div class="card-title">
+                                                <h5>SearchStax</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
@@ -269,7 +324,9 @@
                                     <div class="card">
                                         <img src="qss.png" alt="" class="card-img-top p-4">
                                         <div class="card-body">
-                                            <div class="card-title"><h5>QSS Infotech</h5></div>
+                                            <div class="card-title">
+                                                <h5>QSS Infotech</h5>
+                                            </div>
                                             <div class="card-text"></div>
                                         </div>
                                     </div>
